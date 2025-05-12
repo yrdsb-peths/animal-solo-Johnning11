@@ -8,12 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bee extends Actor
 {
-    /**
-     * Act - do whatever the Bee wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    public Bee(){
+        setImage("images/bee2.png");
+    }
     public void act()
     {
-        // Add your action code here.
+        if (Greenfoot.isKeyDown("right")) {
+            move(1);
+        }
     }
 }
